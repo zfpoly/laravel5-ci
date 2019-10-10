@@ -43,7 +43,7 @@ RUN docker-php-ext-install gd
 RUN curl --silent --show-error https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 #Install mysql client
-COPY ./install-mysql.sh /usr/local/bin/install-mysql
+COPY install-mysql.sh /usr/local/bin/install-mysql
 RUN chmod +x /usr/local/bin/install-mysql
 RUN /usr/local/bin/install-mysql
 
