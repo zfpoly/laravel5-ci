@@ -79,3 +79,6 @@ RUN set -ex; \
 RUN echo "deb http://repo.mysql.com/apt/debian/ buster mysql-5.7" > /etc/apt/sources.list.d/mysql.list
 
 RUN apt-get update && apt-get install -y mysql-server=5.7.27-1debian10
+
+#Install laravel envoy
+RUN composer global require "laravel/envoy=~1.0"
